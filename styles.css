@@ -1,0 +1,243 @@
+* {
+    margin: 0; /* this is default */
+}
+
+
+html {
+    background-color: #28292c;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+body {
+    min-height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#navbar {
+    background-color: #be3144;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    z-index: 2;
+}
+
+.nav-link {
+    /* border: 1px solid blue; */
+    padding: 1rem;
+    height: 57%;
+    font-family: 'Candara', sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    
+}
+
+.nav-link:hover {
+    background-color: #45567d;
+    transition: background-color 0.3s;
+}
+
+#welcome-section {
+    padding-top: 150px;
+}
+
+h1 {
+    margin-left: 80px;
+    color: white;
+    font-size: 50px;
+    font-family: "Lucida console" ,sans-serif;
+}
+
+#welcome-p {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-left: 80px;
+    color: white;
+    font-size: 50px;
+    font-family: "Lucida console" ,sans-serif;
+}
+
+#ebrahim {
+    width: 20px;
+    transition: 3.5s;
+}
+
+#ebrahim:hover {
+    box-shadow: 0 0px 50px 50px rgba(255, 255, 255, 0.914);
+    background-color:white;
+    color: black;
+    width: 5em;
+    
+}
+
+.emoji::selection {
+    background: transparent;
+}
+
+.emoji {
+    font-size: 70px;
+    display: inline-block;
+    animation: waving-hand 2.5s infinite;
+    transform-origin: 70% 70%;
+    cursor: pointer;
+}
+
+@keyframes waving-hand {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(14deg);
+    }
+    20% {
+        transform: rotate(-8deg);
+    }
+    30% {
+        transform: rotate(14deg);
+    }
+    40% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#globe {
+    margin-left: 20px;
+    margin-bottom: -15px;
+    cursor: pointer;
+}
+
+#globe:hover {
+    transform: scale(1.05);
+}
+
+#globe:active {
+    transform:scale(1.5);
+    transition: 2s;
+}
+
+#langs {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.lang {
+    cursor: pointer;
+}
+
+@media (max-width:400px) {
+    .nav-link {
+        font-size: 20px;
+    }
+}
+
+.lang:hover {
+    transform: scale(1.05);
+    transition: 0.3s
+}
+
+#projects-section {
+    background-color: #4a6497;
+}
+
+/* Card stuff */
+#projects {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    flex-wrap: wrap;    
+}
+
+.project-tile {
+    padding: 20px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 25em;
+}
+
+.card-img {
+    height: 15em;
+}
+  
+.card:hover {
+    box-shadow: 0 0px 50px 50px rgba(255, 255, 255, 0.914);
+}
+  
+.card-details {
+    padding: 2px 16px;
+}
+
+.card-p {
+    padding: 2px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #28292c;
+    height: 50em;
+}
+
+.footer-h1{
+    text-align: center; 
+    color:white;
+    padding: 30px; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-right: 0.5em;
+    margin-top: 2em;
+    font-size: 75px;
+}
+
+.footer-h1:hover {
+    text-decoration: none;
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid blue; */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.profile-link {
+    /* border: 1px solid green; */
+    padding: 100px;
+    margin-top: 20px;
+    font-size: 5em;
+}
+
+.profile-link:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.break {  /*Used to make the other two appear on next*/
+    flex-basis: 100%;
+    height: 0;
+}
